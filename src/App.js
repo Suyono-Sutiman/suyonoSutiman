@@ -1,38 +1,24 @@
-import React, { useEffect, useState } from 'react'
 import './App.css';
-import firebase from './Firebase'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './component/pages/home';
+import Work from './component/pages/work';
+import About from './component/pages/about';
+import Contact from './component/pages/contact';
+import Blog from './component/pages/blog';
+import { Container } from 'react-bootstrap';
 
 function App() {
 
-  const [list, setList] = useState([])
-
-  const ref = firebase.firestore().collection('buku')
-
-  const getItem = ()=>{
-    ref.onSnapshot((querySnapshot)=>{
-      const item = []
-      querySnapshot.forEach((doc)=>{
-        item.push(doc.data())
-      })
-      setList(item)
-    })
-  }
-
-  useEffect(()=>{
-    getItem()
-  },[])
-
-  console.log(list)
-
   return (
-    <div className="App">
-      {list.map((buku)=>(
-        <div key={buku.desc}>
-          <h1>{buku.judul}</h1>
-          <h1>{buku.desc}</h1>
-        </div>
-      ))}
-    </div>
+    <Router>
+      <Container>
+        <Route exact path='/' component={Home} />
+        <Route path='/work/' component={Work} />
+        <Route path='/about/' component={About} />
+        <Route path='/contact/' component={Contact} />
+        <Route path='/blog/' component={Blog} />
+      </Container>
+    </Router>
   );
 }
 
