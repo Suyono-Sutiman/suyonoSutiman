@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import Back from "../back"
 
@@ -7,10 +8,10 @@ const About = () => {
     const mid = 'https://midtrans.com/'
     const boot = 'https://getbootstrap.com/'
     const fig = 'https://www.figma.com'
-    const beli = ''
+    const beli = 'https://app.sandbox.midtrans.com/payment-links/1613327769211'
 
     return(
-        <>
+        <Container>
         <Back/>
         <h1>About</h1>
         <p className='lead' >Saya seorang front-end developer & UI-UX designer.</p>
@@ -29,7 +30,7 @@ const About = () => {
             atau anda menginginkan website sesuai keinginan sendiri bisa langsung <Link to='/contact'>hubungi<sup>↗</sup></Link> saya.
         </p>
         <p className='text-muted' >*coba klik tulisan yang ada tanda <sup>↗</sup></p>
-        </>
+        </Container>
     )
 }
 

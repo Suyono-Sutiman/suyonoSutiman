@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
 
 
   return (
-    <>
+    <Container>
     <p className='jam' >{jam}</p>
       <div className='d-flex flex-column justify-content-center align-items-center full'>
       <h1 className='display-4 naik d-md-none' ><Link to='/work'>Work</Link></h1>
@@ -28,7 +29,7 @@ function Home() {
       <h1 className='display-1 naik d-none d-md-block' ><Link to='/contact'>Contact</Link></h1>
       <h1 className='display-1 turun d-none d-md-block' ><Link to='/blog'>Blog</Link></h1>
       </div>
-    </>
+    </Container>
   );
 }
 

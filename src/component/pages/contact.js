@@ -1,8 +1,9 @@
+import { Container } from "react-bootstrap"
 import Back from "../back"
 
 const Contact = () => {
     return(
-        <>
+        <Container>
         <Back/>
         <h1>Contact</h1>
         <p className='lead'>Saya tinggal di Cikupa, Kab. Tangerang, dan saat ini bekerja freelance. 
@@ -27,7 +28,7 @@ const Contact = () => {
                 Coba buat website<sup>↗</sup>
             </a>
         </p>
-        </>
+        </Container>
     )
 }
 

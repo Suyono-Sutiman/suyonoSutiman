@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Col, Image, Row } from "react-bootstrap"
+import { Col, Container, Image, Row } from "react-bootstrap"
 import Back from "../back"
 import firebase from '../../Firebase'
 
@@ -24,9 +24,8 @@ const Work = () => {
             setGambar([])
         })
     },[])
-
     return(
-        <>
+        <Container>
         <Back/>
         <h1>Work</h1>
         <Row>
@@ -36,7 +35,7 @@ const Work = () => {
                 </Col>
         ))}
         </Row>
-        </>
+        </Container>
     )
 }
 
