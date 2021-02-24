@@ -16,7 +16,7 @@ const About = () => {
         <h1>About</h1>
         <p className='lead' >Saya seorang front-end developer & UI-UX designer.</p>
         <p>Saat ini sedang mencoba mendalami <a href={reac}target='blank'>ReactJs<sup>↗</sup></a>, 
-        menyambugkan dengan <a href={fire}target='blank'>Firebase<sup>↗</sup></a>, membuat login <Link to='/admin'>admin<sup>↗</sup></Link>, 
+        menyambugkan dengan <a href={fire}target='blank'>Firebase<sup>↗</sup></a>, membuat login <Link to='/dashboard'>admin<sup>↗</sup></Link>, 
         sinkronisasi dengan admin panel, 
         menulis <Link to='/blog'>blog<sup>↗</sup></Link>, 
         menyediakan pembelian dalam website dengan berbagai macam cara <a href={mid}target='blank'>pembayaran<sup>↗</sup></a>, 

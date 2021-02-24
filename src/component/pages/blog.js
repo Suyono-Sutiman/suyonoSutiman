@@ -42,6 +42,7 @@ const Blog = () => {
                     </p>
                     </div>
                     <Link to={`/post/${blog.judul}`}>
+                    <h1 className='h5'>{blog.judul}</h1>
                     <div dangerouslySetInnerHTML={{__html:blog.isi.substring(0,250)}}></div>
                     </Link>
                 </Col>

@@ -40,6 +40,7 @@ const BlogPost = (props) => {
             <Back/>
             <h1 className='h5 clearfix'><Link to='/blog' className='float-right'><sup></sup> ←Kembali</Link></h1>
             <p>{new Date(tanggal).toLocaleDateString('id',option)}</p>
+            <h1 className='h5'>{post.judul}</h1>
         <div dangerouslySetInnerHTML={{__html:post.isi}} >
         </div>
         </Container>

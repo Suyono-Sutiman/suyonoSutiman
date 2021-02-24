@@ -66,3 +66,9 @@ a, a:hover{
   border-left: 1px solid #ffffff80;
   padding: 1rem 0.5rem;
 }
+.admin-right {
+  min-height: calc(100vh - 84px);
+}
+.ck-editor__editable_inline {
+  min-height: 40vh;
+}

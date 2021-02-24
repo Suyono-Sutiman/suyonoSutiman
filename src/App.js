@@ -5,7 +5,6 @@ import Work from './component/pages/work';
 import About from './component/pages/about';
 import Contact from './component/pages/contact';
 import Blog from './component/pages/blog';
-import { Container } from 'react-bootstrap';
 import BlogPost from './component/blogs/post';
 import Dashboard from './component/admin/dashboard';
 import Blank from './component/pages/404';
