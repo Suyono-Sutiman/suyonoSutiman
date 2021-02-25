@@ -17,7 +17,7 @@ const Dashboard = () => {
         <Admin>
             <Switch>
                 <Route path='/dashboard/edit' component={Editpost}/>
-                <Route path='/dashboard/baru' component={Ckedit}/>
+                <Route path='/dashboard' component={Ckedit}/>
                 <Route path='/dashboard/post/:judul' component={Edit}/>
             </Switch>
         </Admin>
